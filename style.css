@@ -1,0 +1,74 @@
+body{
+    background: url("bgImage.jpg") no-repeat;
+    text-align: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.hidden{
+    display: none;
+}
+
+.theme{
+    margin-top: 18vh;
+    font-size: 15vh;
+    font-family: cursive;
+    line-height: 15vh;
+    color: rgb(228, 238, 245);
+    font-weight: bold;
+    text-shadow: black 7px 7px;
+}
+
+button.play{
+    border: none;
+    box-shadow: rgb(63, 2, 2) 0.3vw 0.3vw;
+    border-radius: 15px;
+    padding: 2vh 5vh;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: rgb(248, 237, 74);
+    color: rgb(93, 6, 128);
+}
+
+.game{
+    margin: auto;
+    margin-top: 10%;
+    width: 80%;
+    height: 80%;
+    border-radius: 2vw;
+    background-color: rgb(54, 78, 85);
+    text-align: center;
+    color: aliceblue;
+}
+.headL{
+    font-size: 3vw;
+    margin: 0;
+}
+.clrTheme{
+    padding: 2vh;
+    background-color: rgb(90, 6, 6);
+    font-size: 5vh;
+}
+
+
+/* responsive design */
+@media screen and (max-width: 750px){
+    .theme{
+        margin-top: 20vh;
+        font-size: 13vw;
+        text-shadow: black 4px 4px;
+        line-height: 13vw;
+    }
+}
+
+@media screen and (max-width: 450px){
+    body{
+        background-position: center;
+    }
+    button.play{
+        margin-top: 3vh;
+        border-radius: 3vw;
+        padding: 3vw 4vw;
+        font-size: 6vw;
+    }
+}
