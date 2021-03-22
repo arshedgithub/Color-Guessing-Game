@@ -3,7 +3,6 @@ const home = document.querySelector(".home");
 const game = document.querySelector(".game");
 const clrTheme = document.querySelector(".clrTheme");
 const boxes = document.querySelectorAll(".box");
-var colors = [];
 let arr = [];
 
 home.addEventListener('click', e => {
@@ -23,7 +22,7 @@ makeColor = () => {
     let red = Math.floor(Math.random()*256);
     let blue = Math.floor(Math.random()*256);
     let green = Math.floor(Math.random()*256);
-    return "rgb(" + red + ", " + green + ", " + blue + " )";
+    return "rgb( " + red + ", " + green + ", " + blue + " )";
 }
 
 // make different colors
