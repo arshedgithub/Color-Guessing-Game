@@ -51,10 +51,10 @@ generateColor(boxes.length);
 
 content.addEventListener('click', e => {
     if (e.target.style.backgroundColor === clrTheme.textContent) {
+        content.setAttribute("style", "opacity:0.2")
         win.classList.remove("hidden");
         fail.classList.add("hidden");
         setTimeout(() => {
-            content.setAttribute("style", "opacity:0.2")
             win.classList.add("hidden");
         }, 5000);
         return;
