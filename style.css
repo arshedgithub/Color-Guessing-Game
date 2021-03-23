@@ -10,7 +10,7 @@ body{
 }
 
 .theme{
-    margin-top: 18vh;
+    margin-top: 13vh;
     font-size: 15vh;
     font-family: cursive;
     line-height: 15vh;
@@ -29,14 +29,22 @@ button.play{
     background-color: rgb(248, 237, 74);
     color: rgb(93, 6, 128);
 }
-
+button.play:hover{
+    transform: scaleX(0.9) scaleY(0.95);
+}
+.author{
+    padding: 3vh;
+    font-size: 3vh;
+    font-family: cursive;
+    text-align: center;
+}
 .game{
     margin: auto;
-    margin-top: 10%;
+    margin-top: 5vh;
     width: 80%;
-    height: 80%;
+    height: auto;
     border-radius: 2vw;
-    background-color: rgb(54, 78, 85);
+    background-color: rgb(52, 71, 77);
     text-align: center;
     color: aliceblue;
 }
@@ -49,21 +57,69 @@ button.play{
     background-color: rgb(90, 6, 6);
     font-size: 5vh;
 }
+.content{
+    background-color: rgb(104, 126, 133);
+    padding: 3vh;
+    padding-bottom: 5vh;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: 50vh;
+    grid-gap: 3vh;
+    z-index: -1;
+}
+.box{
+    border: 1px solid black;
+    border-radius: 1vh;
+}
+.win, .fail{
+    background-color: aliceblue;
+    padding: 4vh;
+    color: blue;
+    position: absolute;
+    margin-top: 10vw;
+    margin-left: 25vw;
+    font-size: 10vh;
+    font-weight: bold;
+    text-shadow: 2vh 2vh 2vh; 
+    z-index: 1;
+}
+button.new{
+    color: white;
+    padding: 1vh 3vh;
+    margin: 1vh;
+    font-size: 3vh;
+    font-weight: bold;
+    background-color: rgb(219, 65, 65);
+}
 
 
 /* responsive design */
 @media screen and (max-width: 750px){
     .theme{
         margin-top: 20vh;
-        font-size: 13vw;
+        font-size: 10vw;
         text-shadow: black 4px 4px;
         line-height: 13vw;
+    }
+    .win, .fail{
+        position: absolute;
+        margin-left: 15vw;
+        font-size: 8vw;
     }
 }
 
 @media screen and (max-width: 450px){
     body{
         background-position: center;
+    }
+    .headL{
+        font-size: 5vw;
+    }
+    .content{
+        padding: 1.5vh;
+        padding-bottom: 2vh;
+        grid-gap: 1.5vh;
+        height: 40vh;
     }
     button.play{
         margin-top: 3vh;
