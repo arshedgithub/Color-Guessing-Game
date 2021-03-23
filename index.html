@@ -14,10 +14,14 @@
         <button class="play">play</button>
         <p class="author">code and design by Arshed Ahmed</p>
     </div>
-
+    
     <div class="game hidden">
         <p class="headL">Guess the color</p>
         <div class="clrTheme"></div>
+
+        <div class="fail hidden" style="color:red">Try again</div>
+        <div class="win hidden" style="color:green">CORRECT!</div>
+        
         <div class="content">
             <div class="box color1"></div>
             <div class="box color2"></div>
@@ -26,6 +30,7 @@
             <div class="box color5"></div>
             <div class="box color6"></div>
         </div>
+        <button class="new" onclick="resetFunc()">New Game</button>
     </div>
 
     <script src="app.js"></script>
