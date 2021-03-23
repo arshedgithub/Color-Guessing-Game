@@ -115,6 +115,9 @@ button.new{
     .headL{
         font-size: 5vw;
     }
+    .clrTheme{
+        font-size: 8vw;
+    }
     .content{
         padding: 1.5vh;
         padding-bottom: 2vh;
